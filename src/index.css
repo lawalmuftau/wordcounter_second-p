@@ -1,13 +1,87 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body {
+  background-color: #fff;
+  color: #555;
+  font-family: "Lato", "arial", "sans-serif";
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: "-";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+/*---------header----------*/
+.header {
+  margin: 10px 0;
+  background-color: #ebe7e7;
+  height: 60px;
+  width: 90%;
+  margin-left: 5px;
+  box-shadow: 0 2px 2px #f0efef;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 2px #f0efef;
+  box-shadow: 0 2px 2px #f0efef;
+}
+.header h3 {
+  text-transform: capitalize;
+  float: left;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+.grammar {
+  float: left;
+  cursor: pointer;
+  background-color: #5ed6e3;
+  color: #fff;
+  border-radius: 10px;
+  text-transform: capitalize;
+  height: 40px;
+  padding: 8px 10px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.box {
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 2.5%;
+  float: left;
+  width: 15%;
+  height: 80px;
+  background-color: #ebe6e6;
+}
+textarea {
+  width: 90%;
+  height: 400px;
+  padding: 7px;
+  border-radius: 3px;
+  overflow-y: scroll;
+}
+.contact-form {
+  margin-top: 30px;
+}
+.plan-price {
+  font-size: 200%;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+.plan-price span {
+  font-size: 40%;
+  font-weight: 300;
 }
